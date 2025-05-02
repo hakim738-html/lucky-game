@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دائرة الحظ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>دائرة الحظ</h1>
+
+  <div class="controls">
+    <textarea id="namesInput" placeholder="أدخل الأسماء مفصولة بنقطة (.) مثل: حكيم.منير.رهف"></textarea>
+    <div class="btn-group">
+      <button onclick="initWheel()">إنشاء</button>
+      <button onclick="startSpin()">دوّر</button>
+      <button onclick="resetGame()">إعادة</button>
+      <button onclick="toggleDarkMode()">وضع ليلي</button>
+    </div>
+  </div>
+
+  <div class="wheel-wrapper">
+    <div class="pointer"></div>
+    <canvas id="wheel" width="300" height="300"></canvas>
+  </div>
+
+  <div id="winners">
+    <h3>المختارين </h3>
+    <ul id="winnerList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
